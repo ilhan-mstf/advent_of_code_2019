@@ -18,7 +18,7 @@ function calculateIncludingFuel(mass) {
   let total = 0;
   while (true) {
     mass = calculateFuel(mass);
-    if (fuel > 0) {
+    if (mass > 0) {
       total += mass;
     } else {
       break;
