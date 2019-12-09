@@ -5,4 +5,27 @@
 
 // Part 1
 let modules = document.querySelector("pre").innerText.split('\n').filter(m => m !== "")
-modules.map(m => Math.floor(Number(m) / 3) - 2).reduce((total, m) => total + m)
+
+function calculateFuel(mass) {
+  return Math.floor(Number(mass) / 3) - 2;
+}
+
+modules.map(m => calculateFuel(m)).reduce((total, m) => total + m);
+
+
+// Part 2
+function calculateIncludingFuel(mass) {
+  let total = 0;
+  let fuel = mass;
+  while (true) {
+    fuel = calculateFuel(fuel);
+    if (fuel > 0) {
+      total += fuel;
+    } else {
+      break;
+    }
+  }
+  return total;
+}
+
+modules.map(m => calculateIncludingFuel(m)).reduce((total, m) => total + m);
