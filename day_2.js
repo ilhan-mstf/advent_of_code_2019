@@ -37,12 +37,13 @@ calculateGravity(states);
 // Part 2
 states = document.querySelector("pre").innerText.split(",").map(state => Number(state));
 
-// Difference between goal and first run 19690720 - 3562624 = 16128096
+// Diff between goal and first run 19690720 - 3562624 = 16128096
 // When states[1] increased to 13 from 12, the output increases 230400
 
 // When diff / increase of first index will give us the value of first index
 // 16128096 / 230400 = 70.00041666666667
 // states[1] += 70
+
 // When you run it with updated states[1] value should be 19690624
-// diff between goal and final state is 19690720 - 19690624 = 96
+// Diff between goal and final state is 19690720 - 19690624 = 96
 // states[2] += 96 
