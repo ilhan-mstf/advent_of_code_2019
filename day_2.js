@@ -1,4 +1,3 @@
-
 let states = document.querySelector("pre").innerText.split(",").map(state => Number(state));
 states[1] = 12
 states[2] = 2
@@ -47,5 +46,3 @@ states = document.querySelector("pre").innerText.split(",").map(state => Number(
 // When you run it with updated states[1] value should be 19690624
 // diff between goal and final state is 19690720 - 19690624 = 96
 // states[2] += 96 
-
-
