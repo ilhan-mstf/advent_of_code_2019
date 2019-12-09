@@ -16,11 +16,10 @@ modules.map(m => calculateFuel(m)).reduce((total, m) => total + m);
 // Part 2
 function calculateIncludingFuel(mass) {
   let total = 0;
-  let fuel = mass;
   while (true) {
-    fuel = calculateFuel(fuel);
+    mass = calculateFuel(mass);
     if (fuel > 0) {
-      total += fuel;
+      total += mass;
     } else {
       break;
     }
