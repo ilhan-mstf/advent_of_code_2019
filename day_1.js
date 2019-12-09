@@ -3,4 +3,4 @@
 
 // Run this code on browser's console
 let modules = document.querySelector("pre").innerText.split('\n').filter(m => m !== "")
-modules.map(m => Math.floor(m / 3) - 2).reduce((total, m) => total + m)
+modules.map(m => Math.floor(Number(m) / 3) - 2).reduce((total, m) => total + m)
