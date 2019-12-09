@@ -4,7 +4,7 @@
 // Run this code on browser's console
 
 // Part 1
-let modules = document.querySelector("pre").innerText.split('\n').filter(m => m !== "")
+let modules = document.querySelector('pre').innerText.split('\n').filter(m => m !== '')
 
 function calculateFuel(mass) {
   return Math.floor(Number(mass) / 3) - 2;
